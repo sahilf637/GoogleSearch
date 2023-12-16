@@ -1,8 +1,14 @@
+*{
+    box-sizing: border-box;
+}
 body, .App{
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;
 }
 
 /* Navigation Bar */
@@ -41,6 +47,7 @@ body, .App{
 
 #Tool:hover{
     background-color: rgb(216, 214, 214);
+    cursor: pointer;
 }
 
 #Sync{
@@ -80,9 +87,69 @@ body, .App{
 
 .Search{
     display: flex;
-    border: 1px black solid;
+    border: 1px rgb(190, 189, 189) solid;
     justify-content: space-between;
-    width: 580px;
+    width: 550px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 25px;
+    padding: -3px 10px;
+}
+
+.Search:hover{
+    box-shadow: 0 0 4px 0.2px rgb(186, 183, 183);
+}
+
+.Search .icon{
+    color: rgb(188, 184, 184);
+    font-size: 1.1rem;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+
+
+.Sbar textarea{
+    font-size: 1rem;
+    width: 423px;
+    height: 30px;
+    border: none;
+    margin: 6px ; 
+    outline: none;
+    margin-top: 10px;
+    resize: none;
+}
+
+.image{
+    width: 41px;
+    height: 43px;
+    padding-right: 6px;
+}
+
+.image img{
+    width: 30px;
+    padding-top: 5px;
+}
+
+.image img:hover{
+    cursor: pointer;
+}
+
+.Buttonbox{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.Buttonbox button{
+    margin: 8px;
+    padding: 8px;
+    font-size: 0.8rem;
+    background-color: rgba(244, 240, 240, 0.575);
+    border: none;
+    border-radius: 5px;
+}
+
+.Buttonbox button:hover{
+    cursor:pointer;
+    box-shadow: 0 0 2px 0.2px rgb(186, 183, 183);
 }
