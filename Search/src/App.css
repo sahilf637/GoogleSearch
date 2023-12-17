@@ -176,6 +176,7 @@ body, .App{
 .Langlink{
     text-decoration: none;
     padding-left: 6px;
+    color: rgb(73, 73, 187);
 }
 
 .Langlink:hover{
