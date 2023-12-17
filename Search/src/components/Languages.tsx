@@ -1,0 +1,9 @@
+const Languages = () => {
+    const language = ["हिन्दी", "বাংলা", "తెలుగు", "मराठी", "தமிழ்", "ગુજરાતી", "ಕನ್ನಡ", "മലയാളം", "ਪੰਜਾਬੀ"];
+    const landiv = language.map((values) => {
+        return <li><a className="Langlink" href="">{values}</a></li>
+    })
+    return <ul>{landiv}</ul>
+}
+
+export default Languages
