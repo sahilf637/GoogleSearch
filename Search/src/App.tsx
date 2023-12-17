@@ -1,6 +1,7 @@
 import Navbar from './components/navbar'
 import Search from './components/search'
 import Middle from './components/middle'
+import Footer from './components/footer'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div className='GoogleImage'><img src="/Goog.png" alt="Google" /></div>
       <Search/>
       <Middle/>
+      <Footer/>
     </div>
   )
 }
