@@ -225,3 +225,53 @@ body, .App{
 .footerLink:hover{
     text-decoration: underline;
 }
+
+
+/* App bar */
+
+.apps{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    height: 380px;
+    border: 6px solid rgba(221, 218, 218, 0.507);
+    background-color: rgba(242, 242, 242, 0.4);
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-right: 20px;
+    overflow-y: scroll;
+    font-size: 0.85rem;
+    padding: 15px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-clip: content-box;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(198, 198, 198);
+    border-radius: 10px;
+}
+
+.app{
+    width: 40px;
+    padding: 8px;
+    margin: 20px;
+}
+
+.app>div{
+    text-align: center;
+
+}
+
+.app img{
+    padding-left: 3px;
+    width: 35px;
+}
