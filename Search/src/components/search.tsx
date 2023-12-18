@@ -1,16 +1,16 @@
 import React, { useState, ChangeEvent } from "react";
 import { IoIosSearch } from "react-icons/io";
 
-const Search = () => {
+const Search: React.FC = () => {                                                                        //Search bar for page
     const [input, setInput] = useState("");
 
-    const handleChange = (event : ChangeEvent<HTMLTextAreaElement>) => {
+    const handleChange = (event : ChangeEvent<HTMLTextAreaElement>) => {                                //changes the input value according to change in search bar
         setInput(event.target.value)
         event.target.style.height = "auto";
         event.target.style.height = `${event.target.scrollHeight}px`;
     }
 
-    const handleSearch = async (event : React.KeyboardEvent<HTMLTextAreaElement>) => {
+    const handleSearch = async (event : React.KeyboardEvent<HTMLTextAreaElement>) => {                  //handles the search functionality of search bar, directs to google search
         if(event.key == 'Enter'){
             event.preventDefault()
             if(input.trim() !== '') {

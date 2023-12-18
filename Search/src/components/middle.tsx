@@ -1,6 +1,6 @@
 import Languages from './Languages'
 
-const Middle = () => {
+const Middle:React.FC = () => {                                 //Middle seaction containing language section
 
     return <div className='middle'>
         <div>Google offered in:</div>

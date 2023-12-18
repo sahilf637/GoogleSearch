@@ -1,11 +1,11 @@
 import { PiDotsNineBold } from "react-icons/pi";
-import React, { useState , useEffect, useRef} from "react";
+import React, { useState } from "react";
 import Gapps from "./Gapps";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = () => {                            //NavBar for page
     const [showApps, setShowApps] = useState(false);
 
-    const toggleManu = () => {
+    const toggleManu = () => {                              //Toggles the showApps
         setShowApps(!showApps)
     }
     
@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
             <div><a href="">Images</a></div></div>
             <div id="Tool" onClick={toggleManu}><PiDotsNineBold/></div>
             <div id="Tool"><div id="Sync">S</div></div>
-            {showApps && 
+            {showApps &&
             (<Gapps
             showApps={showApps}
             setShowApps={setShowApps}

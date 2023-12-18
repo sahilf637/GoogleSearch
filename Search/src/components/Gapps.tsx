@@ -1,21 +1,22 @@
 import React, { useEffect, useRef } from "react";
 
 
-interface ChildProps {
+interface ChildProps {                                                                      //Defines the types of Props in Typescript
     showApps: Boolean,
     setShowApps: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Gapps:React.FC<ChildProps> = ({showApps, setShowApps}) => {
-    const dropdownRef = useRef<HTMLDivElement>(null);
+const Gapps:React.FC<ChildProps> = ({showApps, setShowApps}) => {                            //Google Apps section 
+
+    const dropdownRef = useRef<HTMLDivElement>(null);                                        // Create a reference to the DOM Element to be displayed
     useEffect(() => {
-        const handleOutsideClick: EventListener = (event) => {
+        const handleOutsideClick: EventListener = (event) => {                               //handle the clicking of outside appbar
           if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
             setShowApps(!showApps);
           }
         };
     
-        document.addEventListener('mousedown', handleOutsideClick);
+          document.addEventListener('mousedown', handleOutsideClick);
         return () => {
           document.removeEventListener('mousedown', handleOutsideClick);
         };

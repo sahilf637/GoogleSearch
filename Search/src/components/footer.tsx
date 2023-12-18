@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer:React.FC = () => {                                                                     //Footer section of page
     return <div className="footer">
         <div className="Indi">India</div>
         <div className="Fc ">
